@@ -1,0 +1,9 @@
+.list-container {
+  float: left;
+  width: 400px;
+  margin-right: 10px;
+}
+
+.map-container {
+  float: left;
+}
