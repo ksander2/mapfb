@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>fun-box.ru1</h1>
+        <h1>fun-box.ru</h1>
         <div className="list-container">
           <InputPointField />
           <ListPoint />
