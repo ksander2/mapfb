@@ -1,26 +1,28 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './InputPointField.css';
+import "./InputPointField.css";
 
 class InputPointField extends React.Component {
   constructor(props) {
     super(props);
     this.inputRef = React.createRef();
     this.maxLengthInput = 25;
-    this.placeholderText = 'Введите название точки';
+    this.placeholderText = "Введите название точки";
     this.id = 0;
-    this.text = '';
+    this.text = "";
   }
 
   handleKeyPress = event => {
-    if (event.key === 'Enter') {
-      if (this.props.text !== '') {
-        this.inputRef.current.value = '';
+    if (event.key === "Enter") {
+      if (this.text !== "") {
+        this.inputRef.current.value = "";
         this.props.addPointAction({
           name: this.text,
           id: this.id++,
-          coordinate: this.props.centerMap,
+          coordinate: this.props.centerMap
         });
+        this.text = "";
       }
     }
   };
@@ -32,9 +34,9 @@ class InputPointField extends React.Component {
   render() {
     return (
       <input
-        id={'input-point'}
+        id={"input-point"}
         placeholder={this.placeholderText}
-        className={'input-point-name'}
+        className={"input-point-name"}
         ref={this.inputRef}
         onChange={this.handeIputTextChange}
         onKeyPress={this.handleKeyPress}
@@ -43,5 +45,10 @@ class InputPointField extends React.Component {
     );
   }
 }
+
+InputPointField.propTypes = {
+  text: PropTypes.string,
+  centerMap: PropTypes.array.isRequired
+};
 
 export default InputPointField;
