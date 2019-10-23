@@ -5,6 +5,7 @@
   "homepage": "https://ksander2.github.io/mapfb",
   "dependencies": {
     "gh-pages": "^2.1.1",
+    "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-beautiful-dnd": "^11.0.5",
     "react-dom": "^16.10.2",
