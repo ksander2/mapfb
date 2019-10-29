@@ -6,29 +6,20 @@ import "./InputPointField.css";
 class InputPointField extends React.Component {
   constructor(props) {
     super(props);
-    this.inputRef = React.createRef();
-    this.maxLengthInput = 25;
-    this.placeholderText = "Введите название точки";
     this.id = 0;
-    this.text = "";
   }
 
   handleKeyPress = event => {
     if (event.key === "Enter") {
-      if (this.text !== "") {
-        this.inputRef.current.value = "";
+      if (event.target.value !== "") {
         this.props.addPointAction({
-          name: this.text,
+          name: event.target.value,
           id: this.id++,
           coordinate: this.props.centerMap
         });
-        this.text = "";
+        event.target.value = "";
       }
     }
-  };
-
-  handeIputTextChange = event => {
-    this.text = event.target.value;
   };
 
   render() {
@@ -37,8 +28,8 @@ class InputPointField extends React.Component {
         id={"input-point"}
         placeholder={this.placeholderText}
         className={"input-point-name"}
-        ref={this.inputRef}
-        onChange={this.handeIputTextChange}
+        placeholderText="Введите название точки"
+        maxLengthInput="25"
         onKeyPress={this.handleKeyPress}
         maxLength={this.maxLengthInput}
       />
