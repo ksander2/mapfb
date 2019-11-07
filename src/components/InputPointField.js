@@ -29,9 +29,8 @@ class InputPointField extends React.Component {
         placeholder={this.placeholderText}
         className={"input-point-name"}
         placeholderText="Введите название точки"
-        maxLengthInput="25"
         onKeyPress={this.handleKeyPress}
-        maxLength={this.maxLengthInput}
+        maxLength="30"
       />
     );
   }
