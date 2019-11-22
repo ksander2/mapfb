@@ -3,13 +3,14 @@
 # dependencies
 /node_modules
 /.pnp
+/.vscode
 .pnp.js
 
 # testing
 /coverage
 
 # production
-#/build
+/build
 
 # misc
 .DS_Store
