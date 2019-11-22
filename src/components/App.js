@@ -11,12 +11,14 @@ class App extends React.Component {
         <header>
           <h1>fun-box.ru</h1>
         </header>
-        <div className="list-container">
-          <InputPointField />
-          <ListPoint />
-        </div>
-        <div className="map-container">
-          <MapBasics />
+        <div className="wrapper">
+          <div className="grid">
+            <div className="list-container">
+              <InputPointField />
+              <ListPoint />
+            </div>
+            <MapBasics />
+          </div>
         </div>
       </React.Fragment>
     );
