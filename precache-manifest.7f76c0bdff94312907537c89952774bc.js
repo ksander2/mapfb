@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "02014c65f4de526823b3bcc8a649dd34",
+    "revision": "d892ffc9de3f73efa104f4be061e20b1",
     "url": "/mapfb/index.html"
   },
   {
-    "revision": "95a657c4cb569f280421",
-    "url": "/mapfb/static/css/main.896a93c9.chunk.css"
+    "revision": "802fb57a68ea36c34bf9",
+    "url": "/mapfb/static/css/main.ebb5d677.chunk.css"
   },
   {
     "revision": "607082609def06f08065",
     "url": "/mapfb/static/js/2.71c91af3.chunk.js"
   },
   {
-    "revision": "95a657c4cb569f280421",
+    "revision": "802fb57a68ea36c34bf9",
     "url": "/mapfb/static/js/main.137d214d.chunk.js"
   },
   {
