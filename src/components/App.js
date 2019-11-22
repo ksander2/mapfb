@@ -7,8 +7,10 @@ import "./App.css";
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>fun-box.ru</h1>
+      <React.Fragment>
+        <header>
+          <h1>fun-box.ru</h1>
+        </header>
         <div className="list-container">
           <InputPointField />
           <ListPoint />
@@ -16,7 +18,7 @@ class App extends React.Component {
         <div className="map-container">
           <MapBasics />
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
